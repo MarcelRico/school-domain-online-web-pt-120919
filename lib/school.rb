@@ -21,10 +21,9 @@ class School
   end
   
   def sort
-    result = @roster.sort do |x,y|
-      x<=>y
+    @roster.each do |k,v|
+      puts v
     end
-    result.to_h
   end
   
 end
