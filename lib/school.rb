@@ -6,4 +6,8 @@ class School
   end
   
   attr_accessor :roster
+  
+  def add_student(student)
+    @roster << student
+  end
 end
