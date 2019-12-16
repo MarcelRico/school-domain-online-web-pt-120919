@@ -21,7 +21,10 @@ class School
   end
   
   def sort
-    @roster.sort
+    @roster.sort do |line1,line2|
+      pp line1
+      pp line2
+    end
   end
   
 end
