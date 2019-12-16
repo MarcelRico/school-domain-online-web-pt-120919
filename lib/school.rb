@@ -20,4 +20,8 @@ class School
     result.flatten.to_a
   end
   
+  def sort
+    @roster.sort{|a,b| a}
+  end
+  
 end
