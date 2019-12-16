@@ -6,7 +6,6 @@ class School
   end
   
   attr_accessor :roster
-  attr_reader :grade
   
   def add_student(student,grade)
     if @roster[grade] == nil
@@ -15,6 +14,9 @@ class School
       @roster[grade] << student
     end
   end
-  
 
+  def grade(grade_level)  
+    @roster.filter{|k,v| grade_level == v}
+  end
+  
 end
