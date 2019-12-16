@@ -23,9 +23,10 @@ class School
   def sort
     pp @roster
     result = {}
-    @roster.collect do |k,v|
+    @roster.each do |k,v|
       result[k] = v.sort
     end
+    result 
   end
   
 end
