@@ -22,6 +22,9 @@ class School
   
   def sort
     pp @roster
+    @roster.sort do |line1, line2|
+      line1[1] <=> line2[2]
+    end
   end
   
 end
