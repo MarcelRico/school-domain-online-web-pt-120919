@@ -18,7 +18,8 @@ class School
   def grade(grade_level)
     
     pp @roster
-    @roster.filter{|k,v| grade_level == k}
+    result = @roster.filter{|k,v| grade_level == k}.values
+    pp result
   end
   
 end
