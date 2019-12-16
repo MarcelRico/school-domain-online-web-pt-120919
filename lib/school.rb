@@ -8,6 +8,6 @@ class School
   attr_accessor :roster
   
   def add_student(student,id)
-    @roster[id.to_s] => student
+    @roster[id] = student
   end
 end
