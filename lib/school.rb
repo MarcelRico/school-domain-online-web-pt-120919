@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.sort do |line1,line2|
-      line1[0] <=> line2[0]
+      line1[0] > line2[0]
     end
   end
   
