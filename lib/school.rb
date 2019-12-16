@@ -19,7 +19,7 @@ class School
     
     pp @roster
     result = @roster.filter{|k,v| grade_level == k}.values
-    pp result
+    pp result.to_a
   end
   
 end
