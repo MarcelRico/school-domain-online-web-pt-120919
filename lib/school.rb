@@ -7,7 +7,7 @@ class School
   
   attr_accessor :roster
   
-  def add_student(student,id)
-    @roster[id] = student
+  def add_student(student,grade)
+    @roster[grade] = student.to_s
   end
 end
