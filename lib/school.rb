@@ -21,7 +21,7 @@ class School
   end
   
   def sort
-    @roster.sort do |k,x,v,z|
+    @roster.sort do |x,y|
       pp x
     end
   end
