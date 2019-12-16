@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.sort do |line1,line2|
-      line1.keys.to_i <=> line2.keys.to_i
+      line1.keys <=> line2
     end
   end
   
