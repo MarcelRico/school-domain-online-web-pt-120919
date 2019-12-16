@@ -21,9 +21,10 @@ class School
   end
   
   def sort
-    @roster.sort do |x,y|
+    result = @roster.sort do |x,y|
       x<=>y
     end
+    result.flatten
   end
   
 end
