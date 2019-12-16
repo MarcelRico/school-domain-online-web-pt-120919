@@ -21,7 +21,6 @@ class School
   end
   
   def sort
-    pp @roster
     result = {}
     @roster.each do |k,v|
       result[k] = v.sort
