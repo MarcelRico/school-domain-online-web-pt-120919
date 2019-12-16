@@ -22,8 +22,7 @@ class School
   
   def sort
     @roster.sort do |line1,line2|
-      pp line1
-      pp line2
+      line1.keys <=> line2.keys
     end
   end
   
