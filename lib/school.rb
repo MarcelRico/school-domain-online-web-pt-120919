@@ -16,8 +16,6 @@ class School
   end
 
   def grade(grade_level)
-    
-    pp @roster
     result = @roster.filter{|k,v| grade_level == k}.values
     result.flatten.to_a
   end
