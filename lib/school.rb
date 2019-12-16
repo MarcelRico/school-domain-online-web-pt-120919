@@ -24,7 +24,7 @@ class School
     result = @roster.sort do |x,y|
       x<=>y
     end
-    resul[0]
+    result[0]
   end
   
 end
