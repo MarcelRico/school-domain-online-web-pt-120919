@@ -22,8 +22,9 @@ class School
   
   def sort
     pp @roster
+    result = {}
     @roster.collect do |k,v|
-      v.sort!
+      result[k] = v.sort
     end
   end
   
