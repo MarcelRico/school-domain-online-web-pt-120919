@@ -24,7 +24,7 @@ class School
     result = @roster.sort do |x,y|
       x<=>y
     end
-    result.to_hash
+    result.to_h
   end
   
 end
