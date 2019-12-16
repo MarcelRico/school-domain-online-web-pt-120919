@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.sort do |k,v|
-      pp k
+      pp v
     end
   end
   
